@@ -1,0 +1,85 @@
+body{
+  background-color: rgb(235, 241, 241);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-image: url(list.png);   
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#list{
+  
+  padding: 100px;
+ height:300px;
+ color: rgb(17, 16, 16);
+  width: 200px;
+   box-shadow: 0px 0px 100px rgb(160, 159, 159);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border:1px white solid;
+  border-radius: 20%;
+  font-weight: 900;
+backdrop-filter: blur;
+  
+}
+input{
+  color: rgb(129, 107, 252);
+  align-self: self-end;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background-color: rgb(248, 218, 218);
+  padding:7px;
+}
+input:hover{
+background-color: rgb(202, 202, 198);
+}
+button{
+  font-size: 20px;
+ border: 2px black solid;
+  border-radius: 10%;
+  padding: 8px;
+  animation-name: butt;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+button:hover{
+cursor: pointer;
+}
+@keyframes butt{
+from{
+border-color: black;
+}
+to{
+border-color: red;
+}
+
+}
+@keyframes dele{
+  from{
+   box-shadow: 3px 3px 40px white;
+  }
+  to{
+box-shadow: 3px 3px 40px rgb(92, 90, 90);
+  }
+}
+.del{
+  background-color: black;
+  box-shadow: 3px 3px 40px white;
+  animation-name: dele;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+ul{
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-indent: 2px;
+}
